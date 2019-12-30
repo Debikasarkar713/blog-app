@@ -1,1 +1,17 @@
-<h1>Hello, Rails!</h1>
+<h1>Blog Posts</h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @blog_posts.each do |blog_post| %>
+    <tr>
+      <td><%= blog_post.title %></td>
+      <td><%= blog_post.content %></td>
+      <td><%= link_to 'Show', blog_post_path(blog_post) %></td>
+    </tr>
+  <% end %>
+</table>
