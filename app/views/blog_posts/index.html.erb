@@ -10,7 +10,7 @@
   <% @blog_posts.each do |blog_post| %>
     <tr>
       <td><%= blog_post.title %></td>
-      <td><%= blog_post.content %></td>
+      <td><%= blog_post.excerpt %></td>
       <td><%= link_to 'Show', blog_post_path(blog_post) %></td>
     </tr>
   <% end %>

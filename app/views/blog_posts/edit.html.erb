@@ -1,0 +1,26 @@
+<h1>Edit Blog Post </h1>
+
+<%= form_with(model: @blog_post, local: true) do |form| %>
+    <p>
+        <%= form.label :title %></br>
+        <%= form.text_field :title %>
+    </p>
+
+
+    <p>
+        <%= form.label :excerpt %></br>
+        <%= form.text_area :excerpt %>
+    </p>
+
+    <p>
+        <%= form.label :content %></br>
+        <%= form.text_area :content %>
+    </p>
+
+    <p>
+        <%= form.submit %>
+    </p>
+
+<% end %>
+
+<%= link_to 'Back', blog_posts_path %>
