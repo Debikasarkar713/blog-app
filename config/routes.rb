@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :admin do 
   
-  resources :blog_posts
+  resources :blog_posts, path: 'admin/blog_posts'
   get 'admins/index'
   root to: 'admins#index'
   end
