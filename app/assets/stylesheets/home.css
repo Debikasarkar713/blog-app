@@ -1,5 +1,12 @@
+.body {
+    background-color: #FCF1ED;
+    color:#06244F;
+    font-family: 'EB Garamond', serif;
+}
+
 .section-layout {
   padding: 20px 0 ;
   display: flex;
   justify-content: center;
+  color:#06244F;
 }
