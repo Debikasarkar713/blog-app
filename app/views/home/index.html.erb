@@ -1,23 +1,19 @@
-<div class="body">
 <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
-<section class="section-layout">
-<h1>Blog Posts</h1>
-</section>
-<section class="section-layout">
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-  </tr>
- 
-  <% @blog_posts.each do |blog_post| %>
-    <tr class="section-layout">
-      <td><%= blog_post.title %></td>
-      <td><%= blog_post.excerpt %></td>
-      <td><%= link_to 'Show', blog_post_path(blog_post) %></td>
-    </tr>
-  <% end %>
-</table>
-</section>
+<div class="display">
+  <div class="body-text">
+    <section class="section-layout">
+      <h1>Films? I've seen them.</h1>
+    </section>
+    <section class="section-layout">
+      <table>
+        <% @blog_posts.each do |blog_post| %>
+          <tr class="section-layout">
+            <td class="title"><%= blog_post.title %></td>
+            <td><%= blog_post.excerpt %></td>
+            <td><%= link_to ' More here!', blog_post_path(blog_post) %></td>
+          </tr>
+        <% end %>
+      </table>
+    </section>
+  </div>
 </div>

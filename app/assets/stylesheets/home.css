@@ -1,7 +1,24 @@
-.body {
+body {
+  background-color: #FCF1ED;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  color:#06244F;
+}
+
+.title {
+  font-size: 20px;
+}
+.body-text {
+    margin-top: 10%;
     background-color: #FCF1ED;
     color:#06244F;
     font-family: 'EB Garamond', serif;
+    width: 50%;
+    height: 500px;
+    border: 1px solid black;
 }
 
 .section-layout {
@@ -9,4 +26,18 @@
   display: flex;
   justify-content: center;
   color:#06244F;
+}
+
+td {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    td {
+      margin-left: 10px;
+    }
+
+    .section-layout {
+      padding: 10px 0;
+    }
 }
